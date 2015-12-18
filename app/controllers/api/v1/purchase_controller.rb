@@ -35,7 +35,7 @@ module Api
 
 			private
 			def purchase_params
-				params.require(:purchased_items).permit(:item_id, :purchase_id, :buyer_id, :redeemer_id, :is_redeemed, :user_id, :card_id)
+				params.require(:purchased_items).permit(:item_id, :purchase_id, :buyer_id, :redeemer_id, :is_redeemed, :user_id, :card_id, :message)
 			end
 
 		end
